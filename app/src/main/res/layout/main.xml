@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="标题"
+        android:layout_weight="2"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/data_up"
+        android:hint="删查改"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+    <EditText
+        android:hint="内容"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert"
+            />
+
+        <Button
+            android:id="@+id/delete_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            />
+
+        <Button
+            android:id="@+id/query_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找"
+            />
+
+        <Button
+            android:id="@+id/up_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
